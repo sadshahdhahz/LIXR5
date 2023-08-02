@@ -1,0 +1,62 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
+
+local Window = OrionLib:MakeWindow({Name = "LIXR HUB ", HidePremium = false, IntroText ="Ragdoll Engine",SaveConfig = true, ConfigFolder = "LIXR ON TOP "})
+OrionLib:MakeNotification({
+	
+  Name = "هلا سكربت عجبك قل شكرا",
+	Content = "اذا تبندت مالي دخل",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+
+
+local WTab = Window:MakeTab({
+	Name = "W",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+  })
+
+local Section = LIXTab:AddSection({
+	Name = "LIXR Section"
+})
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("LIXR ON TOP)
+  	end    
+})
+
+
+LIXTab:AddToggle({
+	Name = "speed power",
+	Default = false,
+	Callback = function(Value)
+		print(505)
+	end    
+})
+
+LIXTab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+ TutTab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 50,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(Value)
+		print(Value)
+	end    
+}) 
+  
+end
+OrionLib:Init()
